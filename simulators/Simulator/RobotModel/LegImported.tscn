@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvrh648j1l1k"]
+
+[ext_resource type="PackedScene" uid="uid://bjntmnep5i175" path="res://RobotModel/Leg.blend" id="1_wuohk"]
+[ext_resource type="Script" path="res://RobotModel/Servo.gd" id="2_6nxue"]
+
+[node name="Leg" instance=ExtResource("1_wuohk")]
+
+[node name="Thigh" parent="." index="0"]
+collision_layer = 2
+
+[node name="Calf3" parent="." index="1"]
+collision_layer = 2
+
+[node name="Foot" parent="." index="2"]
+collision_layer = 2
+
+[node name="FootServo" type="HingeJoint3D" parent="." index="3"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.93402e-06, 0, -90)
+node_a = NodePath("../Calf3")
+node_b = NodePath("../Foot")
+angular_limit/enable = true
+angular_limit/upper = 0.785398
+angular_limit/lower = -0.785398
+script = ExtResource("2_6nxue")
+
+[node name="CalfServo" type="HingeJoint3D" parent="." index="4"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.18557e-06, 0, -50)
+node_a = NodePath("../Thigh")
+node_b = NodePath("../Calf3")
+angular_limit/enable = true
+angular_limit/upper = 0.785398
+angular_limit/lower = -0.785398
+script = ExtResource("2_6nxue")
+
+[node name="ThighServo" type="HingeJoint3D" parent="." index="5"]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 0, 2.27374e-13, 0, 0)
+node_b = NodePath("../Thigh")
+angular_limit/enable = true
+angular_limit/upper = 1.0472
+angular_limit/lower = -1.0472
+script = ExtResource("2_6nxue")

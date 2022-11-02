@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://gmsn6fy2yfbk"]
+
+[ext_resource type="PackedScene" uid="uid://cwq13y01x7bq5" path="res://RobotModel/Body.blend" id="1_2ceva"]
+
+[node name="Body" instance=ExtResource("1_2ceva")]
+
+[node name="Body" parent="." index="0"]
+collision_layer = 2

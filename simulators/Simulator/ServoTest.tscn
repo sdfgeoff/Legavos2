@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://btmrghrficale"]
+
+[ext_resource type="Script" path="res://RobotModel/Servo.gd" id="1_0r848"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3qf7x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_go0wb"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+freeze = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+mesh = SubResource("BoxMesh_3qf7x")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_go0wb")
+
+[node name="RigidBody3D2" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
+mesh = SubResource("BoxMesh_3qf7x")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
+shape = SubResource("BoxShape3D_go0wb")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, 1)
+current = true
+
+[node name="HingeJoint3D" type="HingeJoint3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1.64203e-15, 1, 0, 1, 0, -1, -7.10543e-15, -4.37114e-08, 0, 0, 1)
+node_a = NodePath("../RigidBody3D")
+node_b = NodePath("../RigidBody3D2")
+script = ExtResource("1_0r848")
+targetAngle = -0.271

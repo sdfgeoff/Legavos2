@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://kotp28rv7kar"]
+
+[ext_resource type="Script" path="res://Controller.gd" id="1_84cnf"]
+[ext_resource type="PackedScene" uid="uid://gmsn6fy2yfbk" path="res://RobotModel/BodyImported.tscn" id="1_j6467"]
+[ext_resource type="PackedScene" uid="uid://dvrh648j1l1k" path="res://RobotModel/LegImported.tscn" id="2_8cqna"]
+
+[node name="RobotBuilt" type="Node3D"]
+script = ExtResource("1_84cnf")
+ServoJointPaths = [NodePath("Leg/FootServo"), NodePath("Leg/CalfServo"), NodePath("Leg/ThighServo"), NodePath("Leg2/FootServo"), NodePath("Leg2/CalfServo"), NodePath("Leg2/ThighServo"), NodePath("Leg3/FootServo"), NodePath("Leg3/CalfServo"), NodePath("Leg3/ThighServo"), NodePath("Leg4/FootServo"), NodePath("Leg4/CalfServo"), NodePath("Leg4/ThighServo")]
+BodyPath = NodePath("Body/Body")
+
+[node name="Body" parent="." instance=ExtResource("1_j6467")]
+
+[node name="Leg" parent="." instance=ExtResource("2_8cqna")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -35, 0, -35)
+
+[node name="ThighServo" parent="Leg" index="5"]
+node_a = NodePath("../../Body/Body")
+
+[node name="Leg2" parent="." instance=ExtResource("2_8cqna")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 35, 0, -35)
+
+[node name="ThighServo" parent="Leg2" index="5"]
+node_a = NodePath("../../Body/Body")
+
+[node name="Leg3" parent="." instance=ExtResource("2_8cqna")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 35, 0, 35)
+
+[node name="ThighServo" parent="Leg3" index="5"]
+node_a = NodePath("../../Body/Body")
+
+[node name="Leg4" parent="." instance=ExtResource("2_8cqna")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -35, 0, 35)
+
+[node name="ThighServo" parent="Leg4" index="5"]
+node_a = NodePath("../../Body/Body")
+
+[editable path="Body"]
+[editable path="Leg"]
+[editable path="Leg2"]
+[editable path="Leg3"]
+[editable path="Leg4"]

@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Simulator"
+run/main_scene="res://TestScene.tscn"
+config/features=PackedStringArray("4.0")
+config/icon="res://icon.png"
+
+[display]
+
+window/vsync/vsync_mode=0
+
+[layer_names]
+
+3d_physics/layer_1="Environment"
+3d_physics/layer_2="Robot"
+
+[physics]
+
+3d/run_on_separate_thread=true
+3d/default_gravity=980.0
+
+[rendering]
+
+renderer/rendering_method="mobile"
+vulkan/rendering/back_end=1

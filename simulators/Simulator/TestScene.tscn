@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://qwn4g6kwdriy"]
+
+[ext_resource type="Script" path="res://Spawner.gd" id="1_1fdli"]
+[ext_resource type="PackedScene" uid="uid://kotp28rv7kar" path="res://RobotBuilt.tscn" id="1_nmc6c"]
+
+[sub_resource type="Environment" id="Environment_knsv7"]
+ssao_radius = 11.16
+ssao_intensity = 12.02
+glow_intensity = 8.0
+glow_strength = 2.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hc6ex"]
+size = Vector2(10000, 10000)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lwqt5"]
+margin = 0.4
+size = Vector3(10000, 100, 10000)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_knsv7")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 136, 0)
+script = ExtResource("1_1fdli")
+Robot = ExtResource("1_nmc6c")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_hc6ex")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, 0)
+shape = SubResource("BoxShape3D_lwqt5")
+
+[node name="Camera3D" type="Camera3D" parent="MeshInstance3D/StaticBody3D/CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, 0.810175, 0.586189, 0, -0.586189, 0.810175, -84.9241, 412.912, 577.602)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="MeshInstance3D/StaticBody3D/CollisionShape3D/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 0.164221, 0.986423, 0, -0.986423, 0.164221, 0, 255.554, -543.378)
+shadow_enabled = true
+directional_shadow_mode = 1
+directional_shadow_max_distance = 2000.0
