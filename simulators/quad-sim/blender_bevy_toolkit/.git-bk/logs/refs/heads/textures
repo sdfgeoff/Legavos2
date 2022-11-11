@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 674722c8d6f9426fff0ef4dd8630cac34880710f Geoffrey Irons <sdfgeoff@gmail.com> 1644834223 +1300	branch: Created from HEAD
+674722c8d6f9426fff0ef4dd8630cac34880710f be530d0a421cd8577f899b39048dc1f601298c27 Geoffrey Irons <sdfgeoff@gmail.com> 1644865699 +1300	commit: Loading base texture works. Now to do export + other textures
+be530d0a421cd8577f899b39048dc1f601298c27 562b3c43f323ccb5502e5df2106695763250f442 Geoffrey Irons <sdfgeoff@gmail.com> 1645002933 +1300	commit: Now exports most textures. Seems that roughness/metallic isn't doing anything though.
+562b3c43f323ccb5502e5df2106695763250f442 e3b40d991bf756151c307093c6153eeb30f31bd3 Geoffrey Irons <sdfgeoff@gmail.com> 1645003589 +1300	commit: Fmt, pylint, try to match blender/bevy materials some more
+e3b40d991bf756151c307093c6153eeb30f31bd3 a844a5c38511a12492f78f891ca963c1841d56ab Geoffrey Irons <sdfgeoff@gmail.com> 1645006960 +1300	commit: Added tangents, updated ref-assets, added normal test. Still not 100% certain that the normal map is coming across correctly - there are significant differences between blender and bevy
+a844a5c38511a12492f78f891ca963c1841d56ab 8edd11bcfaad1b99f91398624445c6658d4b81a9 Geoffrey Irons <sdfgeoff@gmail.com> 1645522183 +1300	commit: Converted textures to png so we don't need the jpg feature in bevy

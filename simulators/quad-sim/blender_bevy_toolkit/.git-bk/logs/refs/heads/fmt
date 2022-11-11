@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 cf17baad6a07e649dfb752100bbc519b3fa3553c Geoffrey Irons <sdfgeoff@gmail.com> 1643018034 +1300	branch: Created from refs/remotes/origin/fmt
+cf17baad6a07e649dfb752100bbc519b3fa3553c c8a09ae466b1bd4701f82d21aa499bb4be6f4028 Geoffrey Irons <sdfgeoff@gmail.com> 1643018609 +1300	commit: Added formatting check with python's "black" tool
+c8a09ae466b1bd4701f82d21aa499bb4be6f4028 27587da1c84ea0ace79cd7d000fe6f1f7ffcbeb7 Geoffrey Irons <sdfgeoff@gmail.com> 1643018704 +1300	commit: Clarified license
+27587da1c84ea0ace79cd7d000fe6f1f7ffcbeb7 b848b137b6c5b99082960aa77ff7d1fc1416a0c9 Geoffrey Irons <sdfgeoff@gmail.com> 1643021324 +1300	commit: Working towards pylint compliance
+b848b137b6c5b99082960aa77ff7d1fc1416a0c9 4baf57c0bd5d33ea52d274fa7b2c33530d91dcad Geoffrey Irons <sdfgeoff@gmail.com> 1643022365 +1300	commit: Now can run a diff-test so we can see the difference in output in PR's

@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 b04886792a4afdc3dfd78a7942ce0d04fb5cf942 Geoffrey Irons <sdfgeoff@gmail.com> 1643883232 +1300	branch: Created from HEAD
+b04886792a4afdc3dfd78a7942ce0d04fb5cf942 92b37d0ef74885a57830940bcaaab9f6d0457e97 Geoffrey Irons <sdfgeoff@gmail.com> 1643883238 +1300	commit: Added python base class for components
+92b37d0ef74885a57830940bcaaab9f6d0457e97 fc7d8bcf874d8191e7e664568273fd02f439b910 Geoffrey Irons <sdfgeoff@gmail.com> 1643884600 +1300	commit: Fixed abstract class wrangling
+fc7d8bcf874d8191e7e664568273fd02f439b910 b4a43064fd457a6013562f32d45d9cf9e2b9db9b Geoffrey Irons <sdfgeoff@gmail.com> 1643884736 +1300	commit: fmt

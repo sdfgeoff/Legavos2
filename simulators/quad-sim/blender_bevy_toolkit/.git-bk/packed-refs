@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+c59e6ac300f906af40b7cc3f01bfe4c3e92e38ae refs/remotes/origin/box_and_compound_colliders
+71ff1b77caff2664d83f88fb8fb928e8e3df6820 refs/remotes/origin/fix_build_fail_if_no_assets_folder
+e414dd802d01386b8f29ae2cf6799b55adc46f76 refs/remotes/origin/master
+2dcc17e992d9255af7a69d837e08030f90ca80f5 refs/remotes/origin/path-fixes

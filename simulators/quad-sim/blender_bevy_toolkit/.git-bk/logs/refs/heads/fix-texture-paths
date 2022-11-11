@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1645731012 +1300	branch: Created from HEAD
+bd1436deaabf1981397704bfd375014b56428529 b3eed36d8db6649a9b33ef33a2ba92a1baf31fe9 Geoffrey Irons <sdfgeoff@gmail.com> 1645731038 +1300	commit: Fixed exporting textures when texture is in a linked library
+b3eed36d8db6649a9b33ef33a2ba92a1baf31fe9 0ae47b6501c99bc8e0bf99a490cba9f645f76d79 Geoffrey Irons <sdfgeoff@gmail.com> 1645781447 +1300	commit: Some more minor tweaks while attempting to build a small game with it
+0ae47b6501c99bc8e0bf99a490cba9f645f76d79 cd2282dd4b9105cf8c55848f3fb4a132294753b5 Geoffrey Irons <sdfgeoff@gmail.com> 1645784379 +1300	commit: Added support for locking rotation
+cd2282dd4b9105cf8c55848f3fb4a132294753b5 dc61102ade6b1296b3862e34866d2bca30bd340a Geoffrey Irons <sdfgeoff@gmail.com> 1646726392 +1300	commit: Updated diff-test, fixed pylint error with cyclic import. It was being incorrectly detected and I couldn't figure out how to disable it for that file so I gobally disabled it
+dc61102ade6b1296b3862e34866d2bca30bd340a c70b97b6e4b7afc5af745607fa01593615d11612 Geoffrey Irons <sdfgeoff@gmail.com> 1646728191 +1300	commit: Fixed test, trying to fix build
+c70b97b6e4b7afc5af745607fa01593615d11612 5ed895ad7b26647a1ed54ff398046d6f8c9e9d37 Geoffrey Irons <sdfgeoff@gmail.com> 1646729433 +1300	commit: Recreate lock file to update version of rapier slightly
+5ed895ad7b26647a1ed54ff398046d6f8c9e9d37 c2e180d9aa14b8d2a8c5b99019c909c4f95569aa Geoffrey Irons <sdfgeoff@gmail.com> 1647584879 +1300	commit: Now exports collider offsets

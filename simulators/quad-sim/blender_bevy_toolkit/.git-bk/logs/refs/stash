@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 09057bb9efceb90c6c6d2f4975b5a2e146517ca4 Geoffrey Irons <sdfgeoff@gmail.com> 1642588431 +1300	WIP on selectable_examples: 59624ba Prepping to move more examples to another PR
+09057bb9efceb90c6c6d2f4975b5a2e146517ca4 5142608dc5f48589c94984755604a85b948f41da Geoffrey Irons <sdfgeoff@gmail.com> 1643192996 +1300	WIP on fmt: 4baf57c Now can run a diff-test so we can see the difference in output in PR's
+5142608dc5f48589c94984755604a85b948f41da 2d8a1c334f3daef5971cfc48d3b9959cdd0c54bd Geoffrey Irons <sdfgeoff@gmail.com> 1643883192 +1300	WIP on pylint: b048867 Pylint (#23)
+2d8a1c334f3daef5971cfc48d3b9959cdd0c54bd 38f1aa0d02878d286999ce66c34b8c1b06a3c9e2 Geoffrey Irons <sdfgeoff@gmail.com> 1644031080 +1300	WIP on support-point-lights: a3dcc56 Still add a default light to the scenes
+38f1aa0d02878d286999ce66c34b8c1b06a3c9e2 9db814739e4dfd61283ba05e2a57fb51e7a8fbd5 Geoffrey Irons <sdfgeoff@gmail.com> 1644033093 +1300	WIP on support-point-lights: 63c8b1c Working towards removing a bunch of boilerplate
+9db814739e4dfd61283ba05e2a57fb51e7a8fbd5 c8f7eb538501723afb730cfd49f62283b11b4728 Geoffrey Irons <sdfgeoff@gmail.com> 1644034666 +1300	WIP on camera-support: 971edde Working towards removing a bunch of boilerplate
+c8f7eb538501723afb730cfd49f62283b11b4728 aaa3161318ecbed28fb3332a273554452f307f11 Geoffrey Irons <sdfgeoff@gmail.com> 1644712459 +1300	WIP on python_shuffle: ce6ce8a fix fmt
+aaa3161318ecbed28fb3332a273554452f307f11 301c7c81e8277db4c08006c80ae750caa78c5f9d Geoffrey Irons <sdfgeoff@gmail.com> 1644724297 +1300	WIP on visibility-components: 380b6f7 Move visibility components to created through python
+301c7c81e8277db4c08006c80ae750caa78c5f9d d4dd1f0d8a25b14b6845e752fb7ff7535e78c554 Geoffrey Irons <sdfgeoff@gmail.com> 1644730050 +1300	WIP on master: 00c97dd Python shuffle (#32)
+d4dd1f0d8a25b14b6845e752fb7ff7535e78c554 ffa9b53c1056af1f122820a9a6107e542e94204e Geoffrey Irons <sdfgeoff@gmail.com> 1645730925 +1300	WIP on textures: 8edd11b Converted textures to png so we don't need the jpg feature in bevy
+ffa9b53c1056af1f122820a9a6107e542e94204e 9ca551fef3571ab8d5d40660d4baa30b45c7c7cc Geoffrey Irons <sdfgeoff@gmail.com> 1648196540 +1300	WIP on master: bd1436d Loading base texture works. Now to do export + other textures (#37)

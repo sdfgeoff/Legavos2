@@ -1,0 +1,187 @@
+0000000000000000000000000000000000000000 e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642240885 +1300	clone: from github.com:sdfgeoff/blender_bevy_toolkit.git
+e414dd802d01386b8f29ae2cf6799b55adc46f76 063181ac7fe2d42baf2f2ff41df38754c5e7dd03 Geoffrey Irons <sdfgeoff@gmail.com> 1642330071 +1300	commit: Added logging to export stage, fixed issue with exporter not being registered if not present in blender addons list
+063181ac7fe2d42baf2f2ff41df38754c5e7dd03 f42e88d03b3f71cc0189c45b92777f37453ff04e Geoffrey Irons <sdfgeoff@gmail.com> 1642331107 +1300	commit: Now loads and displays something with bevy 0.6
+f42e88d03b3f71cc0189c45b92777f37453ff04e f42e88d03b3f71cc0189c45b92777f37453ff04e Geoffrey Irons <sdfgeoff@gmail.com> 1642331155 +1300	checkout: moving from master to bevy-0.6
+f42e88d03b3f71cc0189c45b92777f37453ff04e f42e88d03b3f71cc0189c45b92777f37453ff04e Geoffrey Irons <sdfgeoff@gmail.com> 1642331168 +1300	checkout: moving from bevy-0.6 to master
+f42e88d03b3f71cc0189c45b92777f37453ff04e e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642331181 +1300	reset: moving to e414dd802d01386b8f29ae2cf6799b55adc46f76
+e414dd802d01386b8f29ae2cf6799b55adc46f76 f42e88d03b3f71cc0189c45b92777f37453ff04e Geoffrey Irons <sdfgeoff@gmail.com> 1642332037 +1300	checkout: moving from master to bevy-0.6
+f42e88d03b3f71cc0189c45b92777f37453ff04e e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642412565 +1300	checkout: moving from bevy-0.6 to master
+e414dd802d01386b8f29ae2cf6799b55adc46f76 e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642412571 +1300	checkout: moving from master to logging
+e414dd802d01386b8f29ae2cf6799b55adc46f76 2dc61eff8a97072aa0e7fdf2a7e9893eb691b867 Geoffrey Irons <sdfgeoff@gmail.com> 1642412581 +1300	cherry-pick: Added logging to export stage, fixed issue with exporter not being registered if not present in blender addons list
+2dc61eff8a97072aa0e7fdf2a7e9893eb691b867 a90b10380a307f91edc7b84e8b38f8c8e18707a1 Geoffrey Irons <sdfgeoff@gmail.com> 1642414108 +1300	commit: Added warning for if there is a version installed in blender
+a90b10380a307f91edc7b84e8b38f8c8e18707a1 e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642414270 +1300	checkout: moving from logging to master
+e414dd802d01386b8f29ae2cf6799b55adc46f76 f42e88d03b3f71cc0189c45b92777f37453ff04e Geoffrey Irons <sdfgeoff@gmail.com> 1642414281 +1300	checkout: moving from master to bevy-0.6
+f42e88d03b3f71cc0189c45b92777f37453ff04e 699ebacc7b59b9cdbad5a866fefcd458108b69db Geoffrey Irons <sdfgeoff@gmail.com> 1642414291 +1300	rebase (start): checkout origin/master
+699ebacc7b59b9cdbad5a866fefcd458108b69db 61f29e5a23fdde37b818e03dc1411feded45195d Geoffrey Irons <sdfgeoff@gmail.com> 1642414291 +1300	rebase (pick): Now loads and displays something with bevy 0.6
+61f29e5a23fdde37b818e03dc1411feded45195d 61f29e5a23fdde37b818e03dc1411feded45195d Geoffrey Irons <sdfgeoff@gmail.com> 1642414291 +1300	rebase (finish): returning to refs/heads/bevy-0.6
+61f29e5a23fdde37b818e03dc1411feded45195d e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642414372 +1300	checkout: moving from bevy-0.6 to master
+e414dd802d01386b8f29ae2cf6799b55adc46f76 699ebacc7b59b9cdbad5a866fefcd458108b69db Geoffrey Irons <sdfgeoff@gmail.com> 1642414379 +1300	pull: Fast-forward
+699ebacc7b59b9cdbad5a866fefcd458108b69db a90b10380a307f91edc7b84e8b38f8c8e18707a1 Geoffrey Irons <sdfgeoff@gmail.com> 1642414442 +1300	checkout: moving from master to logging
+a90b10380a307f91edc7b84e8b38f8c8e18707a1 a90b10380a307f91edc7b84e8b38f8c8e18707a1 Geoffrey Irons <sdfgeoff@gmail.com> 1642414456 +1300	checkout: moving from logging to validate-which-exporter-is-used
+a90b10380a307f91edc7b84e8b38f8c8e18707a1 699ebacc7b59b9cdbad5a866fefcd458108b69db Geoffrey Irons <sdfgeoff@gmail.com> 1642414731 +1300	checkout: moving from validate-which-exporter-is-used to master
+699ebacc7b59b9cdbad5a866fefcd458108b69db 823b25fb018c638569a9d469d4144d5eea353bcf Geoffrey Irons <sdfgeoff@gmail.com> 1642414737 +1300	pull: Fast-forward
+823b25fb018c638569a9d469d4144d5eea353bcf 61f29e5a23fdde37b818e03dc1411feded45195d Geoffrey Irons <sdfgeoff@gmail.com> 1642414774 +1300	checkout: moving from master to bevy-0.6
+61f29e5a23fdde37b818e03dc1411feded45195d 823b25fb018c638569a9d469d4144d5eea353bcf Geoffrey Irons <sdfgeoff@gmail.com> 1642414778 +1300	rebase (start): checkout origin/master
+823b25fb018c638569a9d469d4144d5eea353bcf 055f2ef2a107461681098e4af2129cbdcfc95d62 Geoffrey Irons <sdfgeoff@gmail.com> 1642414854 +1300	rebase (continue): Now loads and displays something with bevy 0.6
+055f2ef2a107461681098e4af2129cbdcfc95d62 055f2ef2a107461681098e4af2129cbdcfc95d62 Geoffrey Irons <sdfgeoff@gmail.com> 1642414858 +1300	rebase (continue) (finish): returning to refs/heads/bevy-0.6
+055f2ef2a107461681098e4af2129cbdcfc95d62 3210baf2db418e666bc601b2731389b228803ea6 Geoffrey Irons <sdfgeoff@gmail.com> 1642500836 +1300	commit: Can load scene based on command line parameter. Meshes now load properly. Issue was caused by https://github.com/bevyengine/bevy/issues/3604
+3210baf2db418e666bc601b2731389b228803ea6 cbed1e90f4ae3fadee0e8a1c73b7db63d7fb476d Geoffrey Irons <sdfgeoff@gmail.com> 1642501091 +1300	commit: Attempt to re-enable physics
+cbed1e90f4ae3fadee0e8a1c73b7db63d7fb476d c5fecccee627a8b6532325c1075a23c67e259506 Geoffrey Irons <sdfgeoff@gmail.com> 1642585997 +1300	commit: Physics is working! Yay!
+c5fecccee627a8b6532325c1075a23c67e259506 134545b7adf31e2b8d4f9afc99aa4c69fef3a615 Geoffrey Irons <sdfgeoff@gmail.com> 1642587274 +1300	commit: Reduced the number of code changes. I liked a lot of those changes, but they cluttered the differences bewteen versions
+134545b7adf31e2b8d4f9afc99aa4c69fef3a615 bab7adc55a827b1103838d698cec1ba9ce9228b3 Geoffrey Irons <sdfgeoff@gmail.com> 1642587806 +1300	commit: More minor tweaks to reduce the number of changes from previous version
+bab7adc55a827b1103838d698cec1ba9ce9228b3 bab7adc55a827b1103838d698cec1ba9ce9228b3 Geoffrey Irons <sdfgeoff@gmail.com> 1642587894 +1300	checkout: moving from bevy-0.6 to with-extra-test-scenes
+bab7adc55a827b1103838d698cec1ba9ce9228b3 bab7adc55a827b1103838d698cec1ba9ce9228b3 Geoffrey Irons <sdfgeoff@gmail.com> 1642587907 +1300	checkout: moving from with-extra-test-scenes to bevy-0.6
+bab7adc55a827b1103838d698cec1ba9ce9228b3 fbdc33649998dd843dd10e03004514c98dab6474 Geoffrey Irons <sdfgeoff@gmail.com> 1642588179 +1300	commit: Prepping to move more examples to another PR
+fbdc33649998dd843dd10e03004514c98dab6474 59624ba88e2520d87bd76cc940927d7ee551010f Geoffrey Irons <sdfgeoff@gmail.com> 1642588286 +1300	commit (amend): Prepping to move more examples to another PR
+59624ba88e2520d87bd76cc940927d7ee551010f bab7adc55a827b1103838d698cec1ba9ce9228b3 Geoffrey Irons <sdfgeoff@gmail.com> 1642588370 +1300	checkout: moving from bevy-0.6 to with-extra-test-scenes
+bab7adc55a827b1103838d698cec1ba9ce9228b3 59624ba88e2520d87bd76cc940927d7ee551010f Geoffrey Irons <sdfgeoff@gmail.com> 1642588392 +1300	reset: moving to bevy-0.6
+59624ba88e2520d87bd76cc940927d7ee551010f 59624ba88e2520d87bd76cc940927d7ee551010f Geoffrey Irons <sdfgeoff@gmail.com> 1642588403 +1300	checkout: moving from with-extra-test-scenes to selectable_examples
+59624ba88e2520d87bd76cc940927d7ee551010f 59624ba88e2520d87bd76cc940927d7ee551010f Geoffrey Irons <sdfgeoff@gmail.com> 1642588431 +1300	reset: moving to HEAD
+59624ba88e2520d87bd76cc940927d7ee551010f 823b25fb018c638569a9d469d4144d5eea353bcf Geoffrey Irons <sdfgeoff@gmail.com> 1642588434 +1300	checkout: moving from selectable_examples to master
+823b25fb018c638569a9d469d4144d5eea353bcf 04feb53e5c11c1f72788f678686d3823c4607e56 Geoffrey Irons <sdfgeoff@gmail.com> 1642588539 +1300	commit: Allow for scene to be selected via command line args
+04feb53e5c11c1f72788f678686d3823c4607e56 04feb53e5c11c1f72788f678686d3823c4607e56 Geoffrey Irons <sdfgeoff@gmail.com> 1642588592 +1300	checkout: moving from master to example-loading
+04feb53e5c11c1f72788f678686d3823c4607e56 04feb53e5c11c1f72788f678686d3823c4607e56 Geoffrey Irons <sdfgeoff@gmail.com> 1642588604 +1300	checkout: moving from example-loading to master
+04feb53e5c11c1f72788f678686d3823c4607e56 823b25fb018c638569a9d469d4144d5eea353bcf Geoffrey Irons <sdfgeoff@gmail.com> 1642588614 +1300	checkout: moving from master to 823b25fb018c638569a9d469d4144d5eea353bcf
+823b25fb018c638569a9d469d4144d5eea353bcf 04feb53e5c11c1f72788f678686d3823c4607e56 Geoffrey Irons <sdfgeoff@gmail.com> 1642588620 +1300	checkout: moving from 823b25fb018c638569a9d469d4144d5eea353bcf to master
+04feb53e5c11c1f72788f678686d3823c4607e56 823b25fb018c638569a9d469d4144d5eea353bcf Geoffrey Irons <sdfgeoff@gmail.com> 1642588630 +1300	reset: moving to 823b25fb018c638569a9d469d4144d5eea353bcf
+823b25fb018c638569a9d469d4144d5eea353bcf 04feb53e5c11c1f72788f678686d3823c4607e56 Geoffrey Irons <sdfgeoff@gmail.com> 1642588670 +1300	checkout: moving from master to example-loading
+04feb53e5c11c1f72788f678686d3823c4607e56 9575642ad1edc4d44c4d35cf36f62980f3adb90a Geoffrey Irons <sdfgeoff@gmail.com> 1642588710 +1300	commit (amend): Allow for scene to be selected via command line args
+9575642ad1edc4d44c4d35cf36f62980f3adb90a d0378d2b12161c111ad7b6800f7b08ce062d4b3d Geoffrey Irons <sdfgeoff@gmail.com> 1642673750 +1300	rebase (start): checkout origin/master
+d0378d2b12161c111ad7b6800f7b08ce062d4b3d 4eb6417e5fe010c7789c35e2cefc6e0514c04e45 Geoffrey Irons <sdfgeoff@gmail.com> 1642673851 +1300	rebase (continue): Allow for scene to be selected via command line args
+4eb6417e5fe010c7789c35e2cefc6e0514c04e45 4eb6417e5fe010c7789c35e2cefc6e0514c04e45 Geoffrey Irons <sdfgeoff@gmail.com> 1642673853 +1300	rebase (continue) (finish): returning to refs/heads/example-loading
+4eb6417e5fe010c7789c35e2cefc6e0514c04e45 cf17baad6a07e649dfb752100bbc519b3fa3553c Geoffrey Irons <sdfgeoff@gmail.com> 1643018034 +1300	checkout: moving from example-loading to fmt
+cf17baad6a07e649dfb752100bbc519b3fa3553c c8a09ae466b1bd4701f82d21aa499bb4be6f4028 Geoffrey Irons <sdfgeoff@gmail.com> 1643018609 +1300	commit: Added formatting check with python's "black" tool
+c8a09ae466b1bd4701f82d21aa499bb4be6f4028 27587da1c84ea0ace79cd7d000fe6f1f7ffcbeb7 Geoffrey Irons <sdfgeoff@gmail.com> 1643018704 +1300	commit: Clarified license
+27587da1c84ea0ace79cd7d000fe6f1f7ffcbeb7 b848b137b6c5b99082960aa77ff7d1fc1416a0c9 Geoffrey Irons <sdfgeoff@gmail.com> 1643021324 +1300	commit: Working towards pylint compliance
+b848b137b6c5b99082960aa77ff7d1fc1416a0c9 4baf57c0bd5d33ea52d274fa7b2c33530d91dcad Geoffrey Irons <sdfgeoff@gmail.com> 1643022365 +1300	commit: Now can run a diff-test so we can see the difference in output in PR's
+4baf57c0bd5d33ea52d274fa7b2c33530d91dcad 4baf57c0bd5d33ea52d274fa7b2c33530d91dcad Geoffrey Irons <sdfgeoff@gmail.com> 1643192996 +1300	reset: moving to HEAD
+4baf57c0bd5d33ea52d274fa7b2c33530d91dcad 823b25fb018c638569a9d469d4144d5eea353bcf Geoffrey Irons <sdfgeoff@gmail.com> 1643192998 +1300	checkout: moving from fmt to master
+823b25fb018c638569a9d469d4144d5eea353bcf ba5302dee48a35e817c261cc2331658595d1ecc5 Geoffrey Irons <sdfgeoff@gmail.com> 1643193009 +1300	pull: Fast-forward
+ba5302dee48a35e817c261cc2331658595d1ecc5 ba5302dee48a35e817c261cc2331658595d1ecc5 Geoffrey Irons <sdfgeoff@gmail.com> 1643193024 +1300	checkout: moving from master to github-actions
+ba5302dee48a35e817c261cc2331658595d1ecc5 e78799ee8021870c8ed22169d36517bc3937e89c Geoffrey Irons <sdfgeoff@gmail.com> 1643193323 +1300	commit: Testing pipeline
+e78799ee8021870c8ed22169d36517bc3937e89c 94bd737886182131e192d9f756785345d757804f Geoffrey Irons <sdfgeoff@gmail.com> 1643193537 +1300	commit: Checkout repo :)
+94bd737886182131e192d9f756785345d757804f aae0fc9caa2563e928c0b906b260c999eccf417e Geoffrey Irons <sdfgeoff@gmail.com> 1643193718 +1300	commit (amend): Checkout repo :)
+aae0fc9caa2563e928c0b906b260c999eccf417e 3a4f42bbd1e34204d63e0e26d0728eb479dc6dbf Geoffrey Irons <sdfgeoff@gmail.com> 1643193788 +1300	commit: Testing that it picks up errors correctly
+3a4f42bbd1e34204d63e0e26d0728eb479dc6dbf aae0fc9caa2563e928c0b906b260c999eccf417e Geoffrey Irons <sdfgeoff@gmail.com> 1643193918 +1300	reset: moving to HEAD^
+aae0fc9caa2563e928c0b906b260c999eccf417e 8761011119821b5ab31124435a7bf2b7cb666df4 Geoffrey Irons <sdfgeoff@gmail.com> 1643194317 +1300	commit: Added integration test
+8761011119821b5ab31124435a7bf2b7cb666df4 442610981429210f1c31614fc69a2ee71eee5205 Geoffrey Irons <sdfgeoff@gmail.com> 1643195144 +1300	commit: Maybe installs blender?
+442610981429210f1c31614fc69a2ee71eee5205 e2be1567948f232c31db491177c4c4f4f88c1581 Geoffrey Irons <sdfgeoff@gmail.com> 1643195436 +1300	commit (amend): Maybe installs blender?
+e2be1567948f232c31db491177c4c4f4f88c1581 e8b017b9d8c030c7215e0d927c0e53f5260bc912 Geoffrey Irons <sdfgeoff@gmail.com> 1643195716 +1300	commit: Should now pass blender along nicely
+e8b017b9d8c030c7215e0d927c0e53f5260bc912 eee0b6be01f9f44c252ce05424107dd59e8e9a79 Geoffrey Irons <sdfgeoff@gmail.com> 1643196192 +1300	commit: Made component order consistent
+eee0b6be01f9f44c252ce05424107dd59e8e9a79 cc50c8e748761e219de19337c9658f1cce4a072e Geoffrey Irons <sdfgeoff@gmail.com> 1643225917 +1300	commit: Moved logic into makefile
+cc50c8e748761e219de19337c9658f1cce4a072e 5f139339f1f3a3391a723b793b6c3c198d52fd79 Geoffrey Irons <sdfgeoff@gmail.com> 1643226018 +1300	commit (amend): Moved logic into makefile
+5f139339f1f3a3391a723b793b6c3c198d52fd79 8a694e95d57e97cf4bf6c65202bdfec438b613dc Geoffrey Irons <sdfgeoff@gmail.com> 1643538705 +1300	commit: Renamed integration test
+8a694e95d57e97cf4bf6c65202bdfec438b613dc ba5302dee48a35e817c261cc2331658595d1ecc5 Geoffrey Irons <sdfgeoff@gmail.com> 1643538991 +1300	checkout: moving from github-actions to master
+ba5302dee48a35e817c261cc2331658595d1ecc5 ee7d08437840aef14e1af0113a80c4cc053eea96 Geoffrey Irons <sdfgeoff@gmail.com> 1643538996 +1300	pull: Fast-forward
+ee7d08437840aef14e1af0113a80c4cc053eea96 ee7d08437840aef14e1af0113a80c4cc053eea96 Geoffrey Irons <sdfgeoff@gmail.com> 1643539001 +1300	checkout: moving from master to pylint
+ee7d08437840aef14e1af0113a80c4cc053eea96 da51dd80143ee097d8ac03fae4533e1f3fee5f8d Geoffrey Irons <sdfgeoff@gmail.com> 1643541386 +1300	commit: Moving towards pylint compliance
+da51dd80143ee097d8ac03fae4533e1f3fee5f8d 4a47c0ddf44d5912a194f9dd16f6679a4607cbbf Geoffrey Irons <sdfgeoff@gmail.com> 1643541401 +1300	commit (amend): Moving towards pylint compliance
+4a47c0ddf44d5912a194f9dd16f6679a4607cbbf 391c886cd9353995611d959096d8506a2afdd612 Geoffrey Irons <sdfgeoff@gmail.com> 1643789951 +1300	commit: Pylint!
+391c886cd9353995611d959096d8506a2afdd612 c047169cdca7217444ec3bebce3ca0df4dd28b3b Geoffrey Irons <sdfgeoff@gmail.com> 1643793875 +1300	commit: Refactored the really awkward file
+c047169cdca7217444ec3bebce3ca0df4dd28b3b 72b169a6f1b685df83caef7a42525c171f76d72e Geoffrey Irons <sdfgeoff@gmail.com> 1643794058 +1300	commit: Now pylint compliant!
+72b169a6f1b685df83caef7a42525c171f76d72e 921befb73d50c9e6b1280db25c3470b743d2fc4e Geoffrey Irons <sdfgeoff@gmail.com> 1643794398 +1300	commit: Install blender for fmt checks so we can run pylint
+921befb73d50c9e6b1280db25c3470b743d2fc4e ecb81ae331087a6464f0b01c941570d5320f4d57 Geoffrey Irons <sdfgeoff@gmail.com> 1643794773 +1300	commit (amend): Install blender for fmt checks so we can run pylint
+ecb81ae331087a6464f0b01c941570d5320f4d57 759bf2ef432ecaeb9015319c53d4c6dce90c263c Geoffrey Irons <sdfgeoff@gmail.com> 1643795178 +1300	commit: Cache blender
+759bf2ef432ecaeb9015319c53d4c6dce90c263c dec01b2b9a56adae6c8bd8f2ec51d63df4c9401f Geoffrey Irons <sdfgeoff@gmail.com> 1643795401 +1300	commit: Added badges, renamed blender export check
+dec01b2b9a56adae6c8bd8f2ec51d63df4c9401f f33847138e4f37d760d91060958acb16d6543285 Geoffrey Irons <sdfgeoff@gmail.com> 1643883143 +1300	commit: Base class is now checked upon registering
+f33847138e4f37d760d91060958acb16d6543285 b04886792a4afdc3dfd78a7942ce0d04fb5cf942 Geoffrey Irons <sdfgeoff@gmail.com> 1643883186 +1300	reset: moving to origin/master
+b04886792a4afdc3dfd78a7942ce0d04fb5cf942 b04886792a4afdc3dfd78a7942ce0d04fb5cf942 Geoffrey Irons <sdfgeoff@gmail.com> 1643883192 +1300	reset: moving to HEAD
+b04886792a4afdc3dfd78a7942ce0d04fb5cf942 ee7d08437840aef14e1af0113a80c4cc053eea96 Geoffrey Irons <sdfgeoff@gmail.com> 1643883195 +1300	checkout: moving from pylint to master
+ee7d08437840aef14e1af0113a80c4cc053eea96 b04886792a4afdc3dfd78a7942ce0d04fb5cf942 Geoffrey Irons <sdfgeoff@gmail.com> 1643883201 +1300	pull: Fast-forward
+b04886792a4afdc3dfd78a7942ce0d04fb5cf942 b04886792a4afdc3dfd78a7942ce0d04fb5cf942 Geoffrey Irons <sdfgeoff@gmail.com> 1643883232 +1300	checkout: moving from master to issue-24/abstract-classes
+b04886792a4afdc3dfd78a7942ce0d04fb5cf942 92b37d0ef74885a57830940bcaaab9f6d0457e97 Geoffrey Irons <sdfgeoff@gmail.com> 1643883238 +1300	commit: Added python base class for components
+92b37d0ef74885a57830940bcaaab9f6d0457e97 fc7d8bcf874d8191e7e664568273fd02f439b910 Geoffrey Irons <sdfgeoff@gmail.com> 1643884600 +1300	commit: Fixed abstract class wrangling
+fc7d8bcf874d8191e7e664568273fd02f439b910 b4a43064fd457a6013562f32d45d9cf9e2b9db9b Geoffrey Irons <sdfgeoff@gmail.com> 1643884736 +1300	commit: fmt
+b4a43064fd457a6013562f32d45d9cf9e2b9db9b b04886792a4afdc3dfd78a7942ce0d04fb5cf942 Geoffrey Irons <sdfgeoff@gmail.com> 1644014893 +1300	checkout: moving from issue-24/abstract-classes to master
+b04886792a4afdc3dfd78a7942ce0d04fb5cf942 4ef3c0c7c835b3fd89d9b852e47a61f556947045 Geoffrey Irons <sdfgeoff@gmail.com> 1644014899 +1300	pull: Fast-forward
+4ef3c0c7c835b3fd89d9b852e47a61f556947045 4ef3c0c7c835b3fd89d9b852e47a61f556947045 Geoffrey Irons <sdfgeoff@gmail.com> 1644014909 +1300	checkout: moving from master to force-use-this-exporter
+4ef3c0c7c835b3fd89d9b852e47a61f556947045 4ef3c0c7c835b3fd89d9b852e47a61f556947045 Geoffrey Irons <sdfgeoff@gmail.com> 1644022962 +1300	checkout: moving from force-use-this-exporter to support-point-lights
+4ef3c0c7c835b3fd89d9b852e47a61f556947045 45ec86baeea1b8204987b5be22652cd86220d403 Geoffrey Irons <sdfgeoff@gmail.com> 1644028183 +1300	commit: Support for point lights
+45ec86baeea1b8204987b5be22652cd86220d403 70014fc1b749cfaf3c1307a042a8d7af22ccb21a Geoffrey Irons <sdfgeoff@gmail.com> 1644029530 +1300	commit: Fmt
+70014fc1b749cfaf3c1307a042a8d7af22ccb21a 88ec96f0b324b81bf01f1e98bc32119023e719b9 Geoffrey Irons <sdfgeoff@gmail.com> 1644029561 +1300	commit: Added light demo
+88ec96f0b324b81bf01f1e98bc32119023e719b9 03ce405007155967370d9790d099d7a53a44974c Geoffrey Irons <sdfgeoff@gmail.com> 1644030158 +1300	commit: Changed demo slightly
+03ce405007155967370d9790d099d7a53a44974c 0033f6caa086f5ce82436e3817f08c09b8398f9e Geoffrey Irons <sdfgeoff@gmail.com> 1644030281 +1300	commit (amend): Changed demo slightly
+0033f6caa086f5ce82436e3817f08c09b8398f9e a3dcc56ab392f456cf8a8eb078dcb806e400827c Geoffrey Irons <sdfgeoff@gmail.com> 1644030416 +1300	commit: Still add a default light to the scenes
+a3dcc56ab392f456cf8a8eb078dcb806e400827c a3dcc56ab392f456cf8a8eb078dcb806e400827c Geoffrey Irons <sdfgeoff@gmail.com> 1644031080 +1300	reset: moving to HEAD
+a3dcc56ab392f456cf8a8eb078dcb806e400827c 63c8b1c5645945e638b38c6dc1ec64f4aacd3f9d Geoffrey Irons <sdfgeoff@gmail.com> 1644033071 +1300	commit: Working towards removing a bunch of boilerplate
+63c8b1c5645945e638b38c6dc1ec64f4aacd3f9d 63c8b1c5645945e638b38c6dc1ec64f4aacd3f9d Geoffrey Irons <sdfgeoff@gmail.com> 1644033093 +1300	reset: moving to HEAD
+63c8b1c5645945e638b38c6dc1ec64f4aacd3f9d 4ef3c0c7c835b3fd89d9b852e47a61f556947045 Geoffrey Irons <sdfgeoff@gmail.com> 1644033102 +1300	checkout: moving from support-point-lights to master
+4ef3c0c7c835b3fd89d9b852e47a61f556947045 bd786a4f7742f33c89985bd900d790c8f70011de Geoffrey Irons <sdfgeoff@gmail.com> 1644033107 +1300	pull: Fast-forward
+bd786a4f7742f33c89985bd900d790c8f70011de bd786a4f7742f33c89985bd900d790c8f70011de Geoffrey Irons <sdfgeoff@gmail.com> 1644033113 +1300	checkout: moving from master to camera-support
+bd786a4f7742f33c89985bd900d790c8f70011de 971eddeda4035cc4ee68bddf93c4b81bdbfd30e5 Geoffrey Irons <sdfgeoff@gmail.com> 1644033122 +1300	cherry-pick: Working towards removing a bunch of boilerplate
+971eddeda4035cc4ee68bddf93c4b81bdbfd30e5 971eddeda4035cc4ee68bddf93c4b81bdbfd30e5 Geoffrey Irons <sdfgeoff@gmail.com> 1644034666 +1300	reset: moving to HEAD
+971eddeda4035cc4ee68bddf93c4b81bdbfd30e5 5ce87c08c52c7ef69d6ce8396facb224a473d6b3 Geoffrey Irons <sdfgeoff@gmail.com> 1644034892 +1300	commit: Refactor so that we can create tag classes more easily
+5ce87c08c52c7ef69d6ce8396facb224a473d6b3 396d9e013e4faf1810ff5055cb4154648b5da8db Geoffrey Irons <sdfgeoff@gmail.com> 1644130519 +1300	commit: Camera component seems to mostly work - just need to wire in the projection matrix parameters
+396d9e013e4faf1810ff5055cb4154648b5da8db 335dd01e0897c750fe282b3a534b0495c69c95fa Geoffrey Irons <sdfgeoff@gmail.com> 1644131249 +1300	commit: Pylint + testing
+335dd01e0897c750fe282b3a534b0495c69c95fa f183ed4054312fe42839ca82d653cacf285d726a Geoffrey Irons <sdfgeoff@gmail.com> 1644139489 +1300	commit: Added cameras to all test scenes. Added a way to scroll through tests scenes from within the scene viewer
+f183ed4054312fe42839ca82d653cacf285d726a fb0474b458fd29a7f4a934c78cef634c670da61d Geoffrey Irons <sdfgeoff@gmail.com> 1644140503 +1300	commit: Updated scenes
+fb0474b458fd29a7f4a934c78cef634c670da61d f708324a0ae2d26111eae4b8f9b37412d2f7df84 Geoffrey Irons <sdfgeoff@gmail.com> 1644314107 +1300	commit: Added orthographic projection
+f708324a0ae2d26111eae4b8f9b37412d2f7df84 a0549092c0d388c48d4ed3df9484b8d80d9df861 Geoffrey Irons <sdfgeoff@gmail.com> 1644314260 +1300	commit: Reverted scene_saver
+a0549092c0d388c48d4ed3df9484b8d80d9df861 01c2a1b3c63e51e8050126b82e7a78f2799de390 Geoffrey Irons <sdfgeoff@gmail.com> 1644314510 +1300	commit: Updated assets, fmt
+01c2a1b3c63e51e8050126b82e7a78f2799de390 9d056b5e9332497820bcda116af57bf44177a7ab Geoffrey Irons <sdfgeoff@gmail.com> 1644314830 +1300	commit: Remove comment
+9d056b5e9332497820bcda116af57bf44177a7ab 6458491191e19f243d9001b988f4cc4435364779 Geoffrey Irons <sdfgeoff@gmail.com> 1644315145 +1300	commit: Fixed failing test
+6458491191e19f243d9001b988f4cc4435364779 bd786a4f7742f33c89985bd900d790c8f70011de Geoffrey Irons <sdfgeoff@gmail.com> 1644316595 +1300	checkout: moving from camera-support to master
+bd786a4f7742f33c89985bd900d790c8f70011de 752841c3e80a9790ddaa2076698a64545cb47c29 Geoffrey Irons <sdfgeoff@gmail.com> 1644316600 +1300	pull: Fast-forward
+752841c3e80a9790ddaa2076698a64545cb47c29 752841c3e80a9790ddaa2076698a64545cb47c29 Geoffrey Irons <sdfgeoff@gmail.com> 1644347010 +1300	checkout: moving from master to python_shuffle
+752841c3e80a9790ddaa2076698a64545cb47c29 e11aaef779c60467c312522389277a549fef3231 Geoffrey Irons <sdfgeoff@gmail.com> 1644347782 +1300	commit: Recursive component search
+e11aaef779c60467c312522389277a549fef3231 50c0e1f1da6f675530f41bad6afaf54992ccce97 Geoffrey Irons <sdfgeoff@gmail.com> 1644404264 +1300	commit: Converted everything to use the new rust_types module
+50c0e1f1da6f675530f41bad6afaf54992ccce97 266dcd2207930b3a687ac7b39f8509b342f91936 Geoffrey Irons <sdfgeoff@gmail.com> 1644404285 +1300	commit (amend): Converted everything to use the new rust_types module. Unfortunately it currenlty doesn't do newlines like the old one
+266dcd2207930b3a687ac7b39f8509b342f91936 f80a27922ca0e94116472065dd6db201c56fff35 Geoffrey Irons <sdfgeoff@gmail.com> 1644405143 +1300	commit: fmt
+f80a27922ca0e94116472065dd6db201c56fff35 33ba9b3ade015dfa90f47ad3bb13e3a010cbef0b Geoffrey Irons <sdfgeoff@gmail.com> 1644710977 +1300	commit: Now indents everything nicely!
+33ba9b3ade015dfa90f47ad3bb13e3a010cbef0b d35c9238e1bffcdfc109d85960fdfabaafba09e5 Geoffrey Irons <sdfgeoff@gmail.com> 1644711607 +1300	commit: Fixed some indent issues
+d35c9238e1bffcdfc109d85960fdfabaafba09e5 ce6ce8a5c8c365145c23e939f940829e2ffd1516 Geoffrey Irons <sdfgeoff@gmail.com> 1644712236 +1300	commit: fix fmt
+ce6ce8a5c8c365145c23e939f940829e2ffd1516 ce6ce8a5c8c365145c23e939f940829e2ffd1516 Geoffrey Irons <sdfgeoff@gmail.com> 1644712459 +1300	reset: moving to HEAD
+ce6ce8a5c8c365145c23e939f940829e2ffd1516 752841c3e80a9790ddaa2076698a64545cb47c29 Geoffrey Irons <sdfgeoff@gmail.com> 1644712461 +1300	checkout: moving from python_shuffle to master
+752841c3e80a9790ddaa2076698a64545cb47c29 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644712469 +1300	pull: Fast-forward
+00c97dd32295f8fb500b4e49d263b5600f9a5dac 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644712477 +1300	checkout: moving from master to fix-fmt-check
+00c97dd32295f8fb500b4e49d263b5600f9a5dac b637c7ad2906572ea64ebb9e47002fba6f1ff617 Geoffrey Irons <sdfgeoff@gmail.com> 1644713315 +1300	commit: Now fails if execution fails
+b637c7ad2906572ea64ebb9e47002fba6f1ff617 bb1d5b8f1253f83596155deb057f41b0bad69a8b Geoffrey Irons <sdfgeoff@gmail.com> 1644714367 +1300	commit: Now installs deps into blender properly
+bb1d5b8f1253f83596155deb057f41b0bad69a8b 55883a768cdfbc8ff4f875eb8e063b4d6570fcec Geoffrey Irons <sdfgeoff@gmail.com> 1644715190 +1300	commit: Fix path
+55883a768cdfbc8ff4f875eb8e063b4d6570fcec 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644723158 +1300	checkout: moving from fix-fmt-check to master
+00c97dd32295f8fb500b4e49d263b5600f9a5dac 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644723169 +1300	checkout: moving from master to visibility-components
+00c97dd32295f8fb500b4e49d263b5600f9a5dac 380b6f7e96255ad4cae8d4bf37d9d48dacf086f4 Geoffrey Irons <sdfgeoff@gmail.com> 1644723175 +1300	commit: Move visibility components to created through python
+380b6f7e96255ad4cae8d4bf37d9d48dacf086f4 380b6f7e96255ad4cae8d4bf37d9d48dacf086f4 Geoffrey Irons <sdfgeoff@gmail.com> 1644724297 +1300	reset: moving to HEAD
+380b6f7e96255ad4cae8d4bf37d9d48dacf086f4 2d4ae1a189734c7c158b46b75945851cdfaacf04 Geoffrey Irons <sdfgeoff@gmail.com> 1644724332 +1300	commit: Fix fmt
+2d4ae1a189734c7c158b46b75945851cdfaacf04 12b2b6dc5742c6d910f8c5d20b9469671b8db242 Geoffrey Irons <sdfgeoff@gmail.com> 1644724386 +1300	commit: Update scenes with new visibility components
+12b2b6dc5742c6d910f8c5d20b9469671b8db242 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644730041 +1300	checkout: moving from visibility-components to master
+00c97dd32295f8fb500b4e49d263b5600f9a5dac 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644730050 +1300	reset: moving to HEAD
+00c97dd32295f8fb500b4e49d263b5600f9a5dac 7b792f2273018e7b12370288e9c7e15023946197 Geoffrey Irons <sdfgeoff@gmail.com> 1644730058 +1300	pull: Fast-forward
+7b792f2273018e7b12370288e9c7e15023946197 7b792f2273018e7b12370288e9c7e15023946197 Geoffrey Irons <sdfgeoff@gmail.com> 1644730065 +1300	checkout: moving from master to export-simple-materials
+7b792f2273018e7b12370288e9c7e15023946197 a671006e339e7b7198fa109a331ce80d9f9ae407 Geoffrey Irons <sdfgeoff@gmail.com> 1644738511 +1300	commit: Exports some material data
+a671006e339e7b7198fa109a331ce80d9f9ae407 c04ed908a415be76f4cb8f3a3135cbbb609dbbdc Geoffrey Irons <sdfgeoff@gmail.com> 1644742694 +1300	commit: Simple material support
+c04ed908a415be76f4cb8f3a3135cbbb609dbbdc 7b792f2273018e7b12370288e9c7e15023946197 Geoffrey Irons <sdfgeoff@gmail.com> 1644834213 +1300	checkout: moving from export-simple-materials to master
+7b792f2273018e7b12370288e9c7e15023946197 674722c8d6f9426fff0ef4dd8630cac34880710f Geoffrey Irons <sdfgeoff@gmail.com> 1644834218 +1300	pull: Fast-forward
+674722c8d6f9426fff0ef4dd8630cac34880710f 674722c8d6f9426fff0ef4dd8630cac34880710f Geoffrey Irons <sdfgeoff@gmail.com> 1644834223 +1300	checkout: moving from master to textures
+674722c8d6f9426fff0ef4dd8630cac34880710f be530d0a421cd8577f899b39048dc1f601298c27 Geoffrey Irons <sdfgeoff@gmail.com> 1644865699 +1300	commit: Loading base texture works. Now to do export + other textures
+be530d0a421cd8577f899b39048dc1f601298c27 562b3c43f323ccb5502e5df2106695763250f442 Geoffrey Irons <sdfgeoff@gmail.com> 1645002933 +1300	commit: Now exports most textures. Seems that roughness/metallic isn't doing anything though.
+562b3c43f323ccb5502e5df2106695763250f442 e3b40d991bf756151c307093c6153eeb30f31bd3 Geoffrey Irons <sdfgeoff@gmail.com> 1645003589 +1300	commit: Fmt, pylint, try to match blender/bevy materials some more
+e3b40d991bf756151c307093c6153eeb30f31bd3 a844a5c38511a12492f78f891ca963c1841d56ab Geoffrey Irons <sdfgeoff@gmail.com> 1645006960 +1300	commit: Added tangents, updated ref-assets, added normal test. Still not 100% certain that the normal map is coming across correctly - there are significant differences between blender and bevy
+a844a5c38511a12492f78f891ca963c1841d56ab 8edd11bcfaad1b99f91398624445c6658d4b81a9 Geoffrey Irons <sdfgeoff@gmail.com> 1645522183 +1300	commit: Converted textures to png so we don't need the jpg feature in bevy
+8edd11bcfaad1b99f91398624445c6658d4b81a9 8edd11bcfaad1b99f91398624445c6658d4b81a9 Geoffrey Irons <sdfgeoff@gmail.com> 1645730925 +1300	reset: moving to HEAD
+8edd11bcfaad1b99f91398624445c6658d4b81a9 674722c8d6f9426fff0ef4dd8630cac34880710f Geoffrey Irons <sdfgeoff@gmail.com> 1645730927 +1300	checkout: moving from textures to master
+674722c8d6f9426fff0ef4dd8630cac34880710f 8edd11bcfaad1b99f91398624445c6658d4b81a9 Geoffrey Irons <sdfgeoff@gmail.com> 1645730964 +1300	checkout: moving from master to textures
+8edd11bcfaad1b99f91398624445c6658d4b81a9 674722c8d6f9426fff0ef4dd8630cac34880710f Geoffrey Irons <sdfgeoff@gmail.com> 1645730999 +1300	checkout: moving from textures to master
+674722c8d6f9426fff0ef4dd8630cac34880710f bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1645731005 +1300	pull: Fast-forward
+bd1436deaabf1981397704bfd375014b56428529 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1645731012 +1300	checkout: moving from master to fix-texture-paths
+bd1436deaabf1981397704bfd375014b56428529 b3eed36d8db6649a9b33ef33a2ba92a1baf31fe9 Geoffrey Irons <sdfgeoff@gmail.com> 1645731038 +1300	commit: Fixed exporting textures when texture is in a linked library
+b3eed36d8db6649a9b33ef33a2ba92a1baf31fe9 0ae47b6501c99bc8e0bf99a490cba9f645f76d79 Geoffrey Irons <sdfgeoff@gmail.com> 1645781447 +1300	commit: Some more minor tweaks while attempting to build a small game with it
+0ae47b6501c99bc8e0bf99a490cba9f645f76d79 cd2282dd4b9105cf8c55848f3fb4a132294753b5 Geoffrey Irons <sdfgeoff@gmail.com> 1645784379 +1300	commit: Added support for locking rotation
+cd2282dd4b9105cf8c55848f3fb4a132294753b5 dc61102ade6b1296b3862e34866d2bca30bd340a Geoffrey Irons <sdfgeoff@gmail.com> 1646726392 +1300	commit: Updated diff-test, fixed pylint error with cyclic import. It was being incorrectly detected and I couldn't figure out how to disable it for that file so I gobally disabled it
+dc61102ade6b1296b3862e34866d2bca30bd340a c70b97b6e4b7afc5af745607fa01593615d11612 Geoffrey Irons <sdfgeoff@gmail.com> 1646728191 +1300	commit: Fixed test, trying to fix build
+c70b97b6e4b7afc5af745607fa01593615d11612 c70b97b6e4b7afc5af745607fa01593615d11612 Geoffrey Irons <sdfgeoff@gmail.com> 1646728342 +1300	reset: moving to HEAD
+c70b97b6e4b7afc5af745607fa01593615d11612 c70b97b6e4b7afc5af745607fa01593615d11612 Geoffrey Irons <sdfgeoff@gmail.com> 1646728401 +1300	reset: moving to HEAD
+c70b97b6e4b7afc5af745607fa01593615d11612 5ed895ad7b26647a1ed54ff398046d6f8c9e9d37 Geoffrey Irons <sdfgeoff@gmail.com> 1646729433 +1300	commit: Recreate lock file to update version of rapier slightly
+5ed895ad7b26647a1ed54ff398046d6f8c9e9d37 c2e180d9aa14b8d2a8c5b99019c909c4f95569aa Geoffrey Irons <sdfgeoff@gmail.com> 1647584879 +1300	commit: Now exports collider offsets
+c2e180d9aa14b8d2a8c5b99019c909c4f95569aa bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648192279 +1300	checkout: moving from fix-texture-paths to master
+bd1436deaabf1981397704bfd375014b56428529 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648192286 +1300	checkout: moving from master to render-engine-overrides
+bd1436deaabf1981397704bfd375014b56428529 a40ab6ad155aa38af6c4d5f431cd01afd9173c14 Geoffrey Irons <sdfgeoff@gmail.com> 1648192294 +1300	commit: Playing with using bevy as a custom render engine
+a40ab6ad155aa38af6c4d5f431cd01afd9173c14 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648192326 +1300	checkout: moving from render-engine-overrides to master
+bd1436deaabf1981397704bfd375014b56428529 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648192336 +1300	checkout: moving from master to run_ci_on_prs
+bd1436deaabf1981397704bfd375014b56428529 5cfcf726029c8c3f49d658c51fb2c7c3d2fba5a4 Geoffrey Irons <sdfgeoff@gmail.com> 1648192453 +1300	commit: Should now run on PR's
+5cfcf726029c8c3f49d658c51fb2c7c3d2fba5a4 077228f3b321f7ee9f35d604afdcf88cd198980f Geoffrey Irons <sdfgeoff@gmail.com> 1648193365 +1300	checkout: moving from run_ci_on_prs to directional_light
+077228f3b321f7ee9f35d604afdcf88cd198980f bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648196518 +1300	checkout: moving from directional_light to master
+bd1436deaabf1981397704bfd375014b56428529 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648196529 +1300	checkout: moving from master to master
+bd1436deaabf1981397704bfd375014b56428529 bd1436deaabf1981397704bfd375014b56428529 Geoffrey Irons <sdfgeoff@gmail.com> 1648196540 +1300	reset: moving to HEAD
+bd1436deaabf1981397704bfd375014b56428529 b1ea62bd37e13a490b214a57761ada40e3ffbcde Geoffrey Irons <sdfgeoff@gmail.com> 1648196545 +1300	pull: Fast-forward
+b1ea62bd37e13a490b214a57761ada40e3ffbcde b1ea62bd37e13a490b214a57761ada40e3ffbcde Geoffrey Irons <sdfgeoff@gmail.com> 1653377678 +1200	reset: moving to HEAD
+b1ea62bd37e13a490b214a57761ada40e3ffbcde cfdbc3dbdaf7fe1724b0168164cca56b7849306d Geoffrey Irons <sdfgeoff@gmail.com> 1653377728 +1200	checkout: moving from master to pr
