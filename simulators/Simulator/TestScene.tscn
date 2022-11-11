@@ -25,6 +25,8 @@ environment = SubResource("Environment_knsv7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 136, 0)
 script = ExtResource("1_1fdli")
 Robot = ExtResource("1_nmc6c")
+output_text = NodePath("../Control/RichTextLabel")
+performance_graph = NodePath("../Control/Performance")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_hc6ex")
@@ -43,3 +45,23 @@ transform = Transform3D(1, 0, 0, 0, 0.164221, 0.986423, 0, -0.986423, 0.164221, 
 shadow_enabled = true
 directional_shadow_mode = 1
 directional_shadow_max_distance = 2000.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 501.0
+offset_bottom = 425.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 421.0
+offset_bottom = 257.0
+text = "This is some test text"
+
+[node name="Performance" type="Line2D" parent="Control"]
+position = Vector2(3, 97)
+points = PackedVector2Array(0, 0, 50, 50, 161, 89, 315, 124, 317, 67)
+width = 2.0
+default_color = Color(0.203922, 1, 0, 1)

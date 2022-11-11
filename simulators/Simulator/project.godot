@@ -8,6 +8,28 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "Node3D",
+"class": &"BotController",
+"language": &"GDScript",
+"path": "res://Controller.gd"
+}, {
+"base": "RefCounted",
+"class": &"NeuralNetwork",
+"language": &"GDScript",
+"path": "res://NeuralNetwork.gd"
+}, {
+"base": "RefCounted",
+"class": &"Neuron",
+"language": &"GDScript",
+"path": "res://Neuron.gd"
+}]
+_global_script_class_icons={
+"BotController": "",
+"NeuralNetwork": "",
+"Neuron": ""
+}
+
 [application]
 
 config/name="Simulator"
