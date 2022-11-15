@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 e414dd802d01386b8f29ae2cf6799b55adc46f76 Geoffrey Irons <sdfgeoff@gmail.com> 1642412571 +1300	branch: Created from HEAD
-e414dd802d01386b8f29ae2cf6799b55adc46f76 2dc61eff8a97072aa0e7fdf2a7e9893eb691b867 Geoffrey Irons <sdfgeoff@gmail.com> 1642412581 +1300	cherry-pick: Added logging to export stage, fixed issue with exporter not being registered if not present in blender addons list
-2dc61eff8a97072aa0e7fdf2a7e9893eb691b867 a90b10380a307f91edc7b84e8b38f8c8e18707a1 Geoffrey Irons <sdfgeoff@gmail.com> 1642414108 +1300	commit: Added warning for if there is a version installed in blender

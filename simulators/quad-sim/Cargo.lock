@@ -187,6 +187,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "bevy-scene-hook"
+version = "4.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e7cb18c6cd4227534ea1063606090a60e1dd4d8eb724a16e178635bfd2002502"
+dependencies = [
+ "bevy",
+]
+
+[[package]]
 name = "bevy_animation"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2627,10 +2636,9 @@ name = "quad-sim"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "bevy-scene-hook",
  "bevy_rapier3d",
  "neural",
- "rand",
- "rand_distr",
 ]
 
 [[package]]

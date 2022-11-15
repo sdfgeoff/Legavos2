@@ -2,7 +2,7 @@
 
 members = [
     "game",
-    # "blender_bevy_toolkit",
+    "neural",
 ]
 resolver = "2"
 

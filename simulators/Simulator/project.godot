@@ -23,11 +23,17 @@ _global_script_classes=[{
 "class": &"Neuron",
 "language": &"GDScript",
 "path": "res://Neuron.gd"
+}, {
+"base": "Node",
+"class": &"Rnn",
+"language": &"GDScript",
+"path": "res://Rnn.gd"
 }]
 _global_script_class_icons={
 "BotController": "",
 "NeuralNetwork": "",
-"Neuron": ""
+"Neuron": "",
+"Rnn": ""
 }
 
 [application]

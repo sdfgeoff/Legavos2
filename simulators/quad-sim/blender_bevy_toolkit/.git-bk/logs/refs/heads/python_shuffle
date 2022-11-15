@@ -1,8 +1,0 @@
-0000000000000000000000000000000000000000 752841c3e80a9790ddaa2076698a64545cb47c29 Geoffrey Irons <sdfgeoff@gmail.com> 1644347010 +1300	branch: Created from HEAD
-752841c3e80a9790ddaa2076698a64545cb47c29 e11aaef779c60467c312522389277a549fef3231 Geoffrey Irons <sdfgeoff@gmail.com> 1644347782 +1300	commit: Recursive component search
-e11aaef779c60467c312522389277a549fef3231 50c0e1f1da6f675530f41bad6afaf54992ccce97 Geoffrey Irons <sdfgeoff@gmail.com> 1644404264 +1300	commit: Converted everything to use the new rust_types module
-50c0e1f1da6f675530f41bad6afaf54992ccce97 266dcd2207930b3a687ac7b39f8509b342f91936 Geoffrey Irons <sdfgeoff@gmail.com> 1644404285 +1300	commit (amend): Converted everything to use the new rust_types module. Unfortunately it currenlty doesn't do newlines like the old one
-266dcd2207930b3a687ac7b39f8509b342f91936 f80a27922ca0e94116472065dd6db201c56fff35 Geoffrey Irons <sdfgeoff@gmail.com> 1644405143 +1300	commit: fmt
-f80a27922ca0e94116472065dd6db201c56fff35 33ba9b3ade015dfa90f47ad3bb13e3a010cbef0b Geoffrey Irons <sdfgeoff@gmail.com> 1644710977 +1300	commit: Now indents everything nicely!
-33ba9b3ade015dfa90f47ad3bb13e3a010cbef0b d35c9238e1bffcdfc109d85960fdfabaafba09e5 Geoffrey Irons <sdfgeoff@gmail.com> 1644711607 +1300	commit: Fixed some indent issues
-d35c9238e1bffcdfc109d85960fdfabaafba09e5 ce6ce8a5c8c365145c23e939f940829e2ffd1516 Geoffrey Irons <sdfgeoff@gmail.com> 1644712236 +1300	commit: fix fmt

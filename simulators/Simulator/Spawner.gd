@@ -143,13 +143,13 @@ func render_performance_graph():
 	graph.points = line
 
 
-func save_brain(path: String, brain: Array[float]):
+func save_brain(path: String, brain):
 	print("Saving ", path)
 	var file = FileAccess.open(path, FileAccess.WRITE)
 	file.store_var(brain)
 	file.flush()
 
-func load_brain(path: String) -> Array[float]:
+func load_brain(path: String):
 	print("Loading ", path)
 	var file = FileAccess.open(path, FileAccess.READ)
 	var content = file.get_var()

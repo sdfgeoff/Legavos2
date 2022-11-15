@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 00c97dd32295f8fb500b4e49d263b5600f9a5dac Geoffrey Irons <sdfgeoff@gmail.com> 1644723169 +1300	branch: Created from HEAD
-00c97dd32295f8fb500b4e49d263b5600f9a5dac 380b6f7e96255ad4cae8d4bf37d9d48dacf086f4 Geoffrey Irons <sdfgeoff@gmail.com> 1644723175 +1300	commit: Move visibility components to created through python
-380b6f7e96255ad4cae8d4bf37d9d48dacf086f4 2d4ae1a189734c7c158b46b75945851cdfaacf04 Geoffrey Irons <sdfgeoff@gmail.com> 1644724332 +1300	commit: Fix fmt
-2d4ae1a189734c7c158b46b75945851cdfaacf04 12b2b6dc5742c6d910f8c5d20b9469671b8db242 Geoffrey Irons <sdfgeoff@gmail.com> 1644724386 +1300	commit: Update scenes with new visibility components

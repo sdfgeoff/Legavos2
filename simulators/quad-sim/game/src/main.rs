@@ -2,13 +2,19 @@
 use bevy::prelude::*;
 use bevy_rapier3d::prelude::*;
 use bevy::diagnostic::{FrameTimeDiagnosticsPlugin, LogDiagnosticsPlugin};
+use bevy_scene_hook::{SceneHook, HookedSceneBundle};
 
 mod controller;
+mod gltf_loader;
 
 use controller::{Controller, step_controller};
 
 
-fn startup(mut commands: Commands) {
+
+
+
+
+fn startup(mut commands: Commands, asset_server: Res<AssetServer>) {
     commands.spawn().insert(Controller::new());
 
     commands.spawn_bundle(Camera3dBundle {
@@ -38,6 +44,13 @@ fn startup(mut commands: Commands) {
         .insert(Restitution::coefficient(0.7))
         .insert_bundle(TransformBundle::from(Transform::from_xyz(i as f32 * 0.001, 4.0 + (i as f32)*0.1, 0.0)));
     }
+
+    let gltfs = vec![
+        asset_server.load("Robot.glb")
+    ];
+    commands.insert_resource(gltf_loader::BlenderGltfLoader {
+        gltfs
+    });
 }
 
 
@@ -49,7 +62,7 @@ fn main() {
         .add_plugin(RapierDebugRenderPlugin::default())
         .add_plugin(LogDiagnosticsPlugin::default())
         .add_plugin(FrameTimeDiagnosticsPlugin::default())
-
+        .add_system(gltf_loader::spawn_gltfs)
         .add_startup_system(startup)
         .add_system(step_controller)
         .run();

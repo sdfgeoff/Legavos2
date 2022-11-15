@@ -15,7 +15,7 @@ var score: float = 0.0
 var servo_previous_positions: Array[float] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 var servo_previous_velocities: Array[float] = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
-var brain: NeuralNetwork = null
+var brain: Rnn = null
 var start_centroid: Vector3 = Vector3(0,0,0)
 
 var time_since_update: float = 0.0
@@ -30,14 +30,14 @@ func _ready():
 	
 	set_target_positions([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
 
-	brain = NeuralNetwork.new()
-	brain.add_layer(32) # 12 for servos, 6 for orientation information, 4 for time signals
-	brain.add_layer(32)
-	brain.add_layer(32)
-	brain.add_layer(32)
-	brain.add_layer(32)
-	brain.connect_layer(len(brain.layers) - 1, 0)  # Feedback!
-	score = 0
+	# brain = NeuralNetwork.new()
+	#brain.add_layer(32) # 12 for servos, 6 for orientation information, 4 for time signals
+	#brain.add_layer(32)
+	#brain.add_layer(32)
+	#brain.add_layer(32)
+	#brain.add_layer(32)
+	#brain.connect_layer(len(brain.layers) - 1, 0)  # Feedback!
+	brain = Rnn.new(160, 32)  # 32 input neurons
 	
 	await get_tree().process_frame
 	start_centroid = get_feet_tip_centeroid()

@@ -1,8 +1,0 @@
-0000000000000000000000000000000000000000 4ef3c0c7c835b3fd89d9b852e47a61f556947045 Geoffrey Irons <sdfgeoff@gmail.com> 1644022962 +1300	branch: Created from HEAD
-4ef3c0c7c835b3fd89d9b852e47a61f556947045 45ec86baeea1b8204987b5be22652cd86220d403 Geoffrey Irons <sdfgeoff@gmail.com> 1644028183 +1300	commit: Support for point lights
-45ec86baeea1b8204987b5be22652cd86220d403 70014fc1b749cfaf3c1307a042a8d7af22ccb21a Geoffrey Irons <sdfgeoff@gmail.com> 1644029530 +1300	commit: Fmt
-70014fc1b749cfaf3c1307a042a8d7af22ccb21a 88ec96f0b324b81bf01f1e98bc32119023e719b9 Geoffrey Irons <sdfgeoff@gmail.com> 1644029561 +1300	commit: Added light demo
-88ec96f0b324b81bf01f1e98bc32119023e719b9 03ce405007155967370d9790d099d7a53a44974c Geoffrey Irons <sdfgeoff@gmail.com> 1644030158 +1300	commit: Changed demo slightly
-03ce405007155967370d9790d099d7a53a44974c 0033f6caa086f5ce82436e3817f08c09b8398f9e Geoffrey Irons <sdfgeoff@gmail.com> 1644030281 +1300	commit (amend): Changed demo slightly
-0033f6caa086f5ce82436e3817f08c09b8398f9e a3dcc56ab392f456cf8a8eb078dcb806e400827c Geoffrey Irons <sdfgeoff@gmail.com> 1644030416 +1300	commit: Still add a default light to the scenes
-a3dcc56ab392f456cf8a8eb078dcb806e400827c 63c8b1c5645945e638b38c6dc1ec64f4aacd3f9d Geoffrey Irons <sdfgeoff@gmail.com> 1644033071 +1300	commit: Working towards removing a bunch of boilerplate
