@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "**/*.blend[1-9]": true,
+        "**/target": true
+    }
+}

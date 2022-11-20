@@ -1,7 +1,6 @@
 use bevy::prelude::*;
 use neural::Rnn;
 
-
 #[derive(Component)]
 pub struct Controller {
     controller_model: Rnn,
@@ -10,12 +9,10 @@ pub struct Controller {
 impl Controller {
     pub fn new() -> Self {
         Self {
-            controller_model: Rnn::new(100)
+            controller_model: Rnn::new(100),
         }
     }
 }
-
-
 
 pub fn step_controller(mut query: Query<&mut Controller>) {
     for mut controller in query.iter_mut() {

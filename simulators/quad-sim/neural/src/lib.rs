@@ -1,6 +1,5 @@
 use rand::thread_rng;
-use rand_distr::{Normal, Distribution};
-
+use rand_distr::{Distribution, Normal};
 
 #[derive(Debug)]
 pub struct Rnn {
@@ -8,7 +7,6 @@ pub struct Rnn {
     offsets: Vec<f32>,
     pub state: Vec<f32>,
 }
-
 
 impl Rnn {
     pub fn new(size: usize) -> Self {
@@ -18,11 +16,11 @@ impl Rnn {
         for _i in 0..size {
             weights.push(vec![0.0; size]);
         }
-        
+
         Self {
             state,
             offsets,
-            weights
+            weights,
         }
     }
 
@@ -55,13 +53,9 @@ impl Rnn {
     }
 
     // pub fn save(&self, f: &mut File) {
-        
 
     // }
-
-    
 }
-
 
 fn dot_arrays(a: &[f32], b: &[f32]) -> f32 {
     return a.iter().zip(b.iter()).map(|(x, y)| x * y).sum();

@@ -6,9 +6,18 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = { version = "0.8.0", features = ["dynamic"] }
-bevy_rapier3d = { version = "0.18", features = [ "simd-stable", "debug-render" ] }
-bevy-scene-hook = "4.1.0"
+bevy = { version = "0.9.0", features = ["dynamic"] }
+bevy_rapier3d = { version = "0.19", features = [ "simd-stable", "debug-render" ] }
+bevy-inspector-egui = "0.14.0"
+
 
 [dependencies.neural]
 path='../neural'
+
+[dependencies.bevy-gltf-component-loader]
+path = '../bevy-gltf-component-loader'
+
+
+[dependencies.bevy-scene-hook]
+# version = "5.1.1"
+path = '../bevy-scene-hook'

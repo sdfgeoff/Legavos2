@@ -3,6 +3,7 @@
 members = [
     "game",
     "neural",
+    "bevy-scene-hook",
 ]
 resolver = "2"
 
