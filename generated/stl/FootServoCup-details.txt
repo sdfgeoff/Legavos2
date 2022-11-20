@@ -1,7 +1,7 @@
 {
-  "volume_cm3": 3.249678,
-  "surface_area_cm2": 45.521094999999995,
-  "approx_material_volume_cm3": 3.249678,
-  "approx_weight_grams": 4.0296007199999995,
-  "approx_cost": 0.18536163311999995
+  "volume_cm3": 3.2078605,
+  "surface_area_cm2": 45.608548,
+  "approx_material_volume_cm3": 3.2078605,
+  "approx_weight_grams": 3.97774702,
+  "approx_cost": 0.18297636292
 }
