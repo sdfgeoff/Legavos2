@@ -47,8 +47,9 @@ func _ready():
 	#var brain = load_brain("user://checkpoint-<null>-750.data")
 	#var brain = load_brain("user://checkpoint-50-slow-shuffle.data")
 	print("Starting Run: ", run_name)
-	#for bot_id in range(len(bots)):
-	#	var bot = bots[bot_id]
+	for bot_id in range(len(bots)):
+		var bot = bots[bot_id]
+		bot.brain.mutate(10.0)
 	#	bot.brain.load_weights(brain)
 
 
@@ -87,7 +88,6 @@ func new_generation():
 	bots = []
 		
 	respawn()
-
 	for bot_id in range(len(bots)):
 		var bot = bots[bot_id]
 		bot.brain.load_weights(best_brain)
@@ -103,7 +103,7 @@ func new_generation():
 	performance_graph_data.append(highest_score)
 	
 
-	mutation_scale = 0.5#  * pow(2.16, -0.01 * current_generation)  # Simulated annealing
+	mutation_scale = 10.0 * pow(2.16, -0.1 * current_generation)  # Simulated annealing
 
 
 func _process(delta):

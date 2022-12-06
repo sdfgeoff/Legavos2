@@ -37,12 +37,18 @@ func get_neuron_value(layer: int, neuron_id: int) -> float:
 
 func step():
 	var prev_state = states.duplicate();
+
+	var weight_array = null
+	var input_gain = 0
+	var sum = 0
+	
 	for i in range(len(weights)):
-		var weight_array = weights[i]
-		var input_gain = -offsets[i];
+		weight_array = weights[i]
+		input_gain = -offsets[i];
 		input_gain += dot_arrays(prev_state, weight_array)
-		states.set(i, relu_activation_function(input_gain))
-		
+		input_gain = relu_activation_function(input_gain)
+		states[i] = input_gain
+
 func dump_weights():
 	return [weights, offsets]
 	
@@ -74,6 +80,7 @@ func mutate(mutate_scale: float):
 				weight_id, 
 				weights[weight_array_id][weight_id] + rng.randfn(0.0, mutate_scale)
 			)
+	print(weights[0])
 	
 	for offset_id in range(len(offsets)):
 		offsets.set(offset_id, offsets[offset_id] + rng.randfn(0.0, mutate_scale))

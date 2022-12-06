@@ -37,7 +37,7 @@ func _ready():
 	#brain.add_layer(32)
 	#brain.add_layer(32)
 	#brain.connect_layer(len(brain.layers) - 1, 0)  # Feedback!
-	brain = Rnn.new(160, 32)  # 32 input neurons
+	brain = Rnn.new(50, 32)  # 32 input neurons
 	
 	await get_tree().process_frame
 	start_centroid = get_feet_tip_centeroid()
@@ -93,15 +93,15 @@ func interate_network():
 	
 	# Timing
 
-	brain.set_neuron_value(0, i, sin(Time.get_ticks_msec() / 1000.0))
-	i+=1
+	#brain.set_neuron_value(0, i, sin(Time.get_ticks_msec() / 1000.0))
+	#i+=1
 	
-	brain.set_neuron_value(0, i, cos(Time.get_ticks_msec() / 1000.0 * 0.5))
-	i+=1
-	brain.set_neuron_value(0, i, sin(Time.get_ticks_msec() / 1000.0 * 2.0) * 100.0)
-	i+=1
-	brain.set_neuron_value(0, i, cos(Time.get_ticks_msec() / 1000.0 * 4.0) * 100.0)
-	i+=1
+	#brain.set_neuron_value(0, i, cos(Time.get_ticks_msec() / 1000.0 * 0.5))
+	#i+=1
+	#brain.set_neuron_value(0, i, sin(Time.get_ticks_msec() / 1000.0 * 2.0) * 100.0)
+	#i+=1
+	#brain.set_neuron_value(0, i, cos(Time.get_ticks_msec() / 1000.0 * 4.0) * 100.0)
+	#i+=1
 
 	brain.step()
 	
@@ -122,8 +122,11 @@ func _process(delta):
 		interate_network()
 	
 	# Accumulate a score for evaluation purposes
-	var body_is_upright = get_body_vertical_axis().dot(Vector3(0,1,0)) * 0.5
-	score += body_is_upright * delta
+	var body_is_upright = get_body_vertical_axis().dot(Vector3(0,1,0))
+	if body_is_upright < 0.5:
+
+		score = 0.0
+	score += body_is_upright * delta  * 0.5
 	
 	var body_is_facing_motion = get_body_forwards_axis().dot(Vector3(1,0,0)) * 0.5
 	score += body_is_facing_motion * delta
@@ -151,10 +154,10 @@ func _process(delta):
 		servo_velocities.append(acceleration)
 		
 		# punish for servo acceleration
-		servo_score = servo_score - abs(acceleration)
+		# servo_score = servo_score - abs(acceleration)
 		
 		# Promote servo motion
-		servo_score = servo_score + abs(servo_velocity)
+		# servo_score = servo_score + abs(servo_velocity)
 	score += servo_score * delta * 10.0
 
 	servo_previous_positions = positions

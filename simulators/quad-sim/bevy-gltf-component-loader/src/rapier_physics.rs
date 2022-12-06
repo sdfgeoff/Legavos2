@@ -4,6 +4,7 @@ use bevy_rapier3d::rapier::geometry::SharedShape;
 use bevy_rapier3d::rapier::na::Point3;
 use serde::{Deserialize, Serialize};
 
+
 #[derive(Reflect, Default, Component, Serialize, Deserialize, Debug)]
 #[reflect(Component)]
 /// A RigidBodyDescription is only present until the body_description_to_builder system runs,
@@ -113,19 +114,31 @@ pub fn body_description_to_builder(
     }
 }
 
+
+fn default_friction() -> f32 {
+    return 0.5;
+}
+fn default_restitution() -> f32 {
+    return 0.1;
+}
+fn default_density() -> f32 {
+    return 0.1;
+}
+
+
 #[derive(Reflect, Default, Component, Serialize, Deserialize, Debug)]
 #[reflect(Component)]
 pub struct ColliderDescription {
-    #[serde(default)]
+    #[serde(default="default_friction")]
     friction: f32,
 
-    #[serde(default)]
+    #[serde(default="default_restitution")]
     restitution: f32,
 
     #[serde(default)]
     is_sensor: bool,
 
-    #[serde(default)]
+    #[serde(default="default_density")]
     density: f32,
 
     /// At the moment, you can't use an enum with bevy's Reflect derivation.
@@ -161,7 +174,6 @@ pub fn collider_description_to_builder(
         let centroid = aabb.center;// Vec3::new(0.0, 0.0, 0.0);
         let half_extents = aabb.half_extents;//Vec3::new(0.01, 0.01, 0.01);
 
-        println!("Shape: {}", collider_desc.collider_shape);
         let shape = match collider_desc.collider_shape {
             0 => {
                 // Sphere
