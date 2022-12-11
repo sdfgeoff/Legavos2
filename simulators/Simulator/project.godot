@@ -14,26 +14,14 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://Controller.gd"
 }, {
-"base": "RefCounted",
-"class": &"NeuralNetwork",
-"language": &"GDScript",
-"path": "res://NeuralNetwork.gd"
-}, {
-"base": "RefCounted",
-"class": &"Neuron",
-"language": &"GDScript",
-"path": "res://Neuron.gd"
-}, {
 "base": "Node",
-"class": &"Rnn",
+"class": &"NetworkAdapter",
 "language": &"GDScript",
-"path": "res://Rnn.gd"
+"path": "res://Network.gd"
 }]
 _global_script_class_icons={
 "BotController": "",
-"NeuralNetwork": "",
-"Neuron": "",
-"Rnn": ""
+"NetworkAdapter": ""
 }
 
 [application]

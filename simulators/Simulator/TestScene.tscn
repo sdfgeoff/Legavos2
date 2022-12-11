@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://qwn4g6kwdriy"]
+[gd_scene load_steps=7 format=3 uid="uid://qwn4g6kwdriy"]
 
-[ext_resource type="Script" path="res://Spawner.gd" id="1_1fdli"]
+[ext_resource type="Script" path="res://SceneControl.gd" id="1_64lic"]
 [ext_resource type="PackedScene" uid="uid://kotp28rv7kar" path="res://RobotBuilt.tscn" id="1_nmc6c"]
+[ext_resource type="Script" path="res://Network.gd" id="2_orrph"]
 
 [sub_resource type="Environment" id="Environment_knsv7"]
 ssao_radius = 11.16
@@ -21,12 +22,15 @@ size = Vector3(10000, 100, 10000)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_knsv7")
 
-[node name="Node3D" type="Node3D" parent="."]
+[node name="SceneControl" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 136, 0)
-script = ExtResource("1_1fdli")
-Robot = ExtResource("1_nmc6c")
-output_text = NodePath("../Control/RichTextLabel")
-performance_graph = NodePath("../Control/Performance")
+script = ExtResource("1_64lic")
+
+[node name="Network" type="Node" parent="SceneControl"]
+script = ExtResource("2_orrph")
+
+[node name="RobotBuilt" parent="SceneControl" instance=ExtResource("1_nmc6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -40.0759, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_hc6ex")
@@ -53,7 +57,6 @@ offset_right = 501.0
 offset_bottom = 425.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-layout_mode = 0
 offset_left = 2.0
 offset_top = -2.0
 offset_right = 421.0
@@ -65,3 +68,6 @@ position = Vector2(3, 97)
 points = PackedVector2Array(0, 0, 50, 50, 161, 89, 315, 124, 317, 67)
 width = 2.0
 default_color = Color(0.203922, 1, 0, 1)
+
+[connection signal="new_packet" from="SceneControl/Network" to="SceneControl" method="_on_network_new_packet"]
+[connection signal="stateVector" from="SceneControl/RobotBuilt" to="SceneControl" method="_on_robot_built_state_vector"]

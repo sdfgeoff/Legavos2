@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://do18siudjhx8s"]
+
+[ext_resource type="Script" path="res://RobotModel/Servo.gd" id="1_joq48"]
+[ext_resource type="Script" path="res://ServoTesterSlider.gd" id="2_do1q6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t1ens"]
+albedo_color = Color(1, 0.603922, 0.854902, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_imbgi"]
+material = SubResource("StandardMaterial3D_t1ens")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jkoso"]
+
+[sub_resource type="Environment" id="Environment_pqcsu"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="RigidBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+mesh = SubResource("BoxMesh_imbgi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_jkoso")
+
+[node name="RigidBody3D2" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+can_sleep = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
+mesh = SubResource("BoxMesh_imbgi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
+shape = SubResource("BoxShape3D_jkoso")
+
+[node name="HingeJoint3D" type="HingeJoint3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03245, 0, 0)
+node_a = NodePath("../RigidBody3D")
+node_b = NodePath("../RigidBody3D2")
+script = ExtResource("1_joq48")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.236516, 0.971628, 0, -0.971628, 0.236516, 1.33844, 2.68185, 0.867356)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HSlider" type="HSlider" parent="Control"]
+layout_mode = 0
+offset_right = 231.0
+offset_bottom = 16.0
+min_value = -1.0
+max_value = 1.0
+step = 0.05
+script = ExtResource("2_do1q6")
+targetServo = NodePath("../../HingeJoint3D")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pqcsu")

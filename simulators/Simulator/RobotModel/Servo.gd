@@ -4,6 +4,7 @@ var currentVelocity: float = 0.0
 var currentAngle: float = 0.0
 @export var targetAngle: float = 0.0
 
+
 var MAX_ACCELERATION: float = 5.0
 @export var MAX_VELOCITY = 1.5
 @export var MAX_INPULSE = 400.0
@@ -24,17 +25,38 @@ func _ready():
 			node_shape.shape.margin = 4.0
 
 
-func _physics_process(delta):
-	currentAngle = self.get_param(self.PARAM_CURRENT_ANGULAR_DISPLACEMENT)
-	var error = currentAngle - targetAngle
-	var targetVelocity = error * 10
-	var velocity = -clamp(targetVelocity, -MAX_VELOCITY, MAX_VELOCITY)
-
-	var acceleration = -clamp(targetVelocity - currentVelocity, -MAX_ACCELERATION * delta, MAX_ACCELERATION * delta)
+func compute_next_velocity(delta: float):
+	var newAngle = self.get_param(self.PARAM_CURRENT_ANGULAR_DISPLACEMENT)
+	if abs(newAngle) > 10:
+		return 0.0 
+		
+	var newVelocity = (newAngle - currentAngle) / delta
+	var newAcceleration = (newVelocity - currentVelocity) / delta
 	
-	velocity = currentVelocity + acceleration
-	currentVelocity = velocity
-	set_param(PARAM_MOTOR_TARGET_VELOCITY, velocity)
+	var positionError = newAngle - targetAngle
+	var targetVelocity = -positionError * 5.0
+	targetVelocity = clamp(targetVelocity, -MAX_VELOCITY, MAX_VELOCITY)
+
+
+	#var velocityError = newVelocity - targetVelocity
+	#var targetAcceleration = -velocityError * 10.0
+	#targetAcceleration = clamp(targetAcceleration, -MAX_ACCELERATION, MAX_ACCELERATION)
+
+	#var outputVelocity = currentVelocity + targetAcceleration * delta
+	
+	
+	#var currentAcceleration = newAcceleration
+	#currentVelocity = outputVelocity  # Hack because Godot's joints at maintaining velocity
+	currentAngle = newAngle
+	
+	
+	return targetVelocity
+	
+
+func _process(delta):
+	var outputVelocity = compute_next_velocity(delta)
+
+	set_param(PARAM_MOTOR_TARGET_VELOCITY, outputVelocity)
 
 
 func setTargetAngle(angle: float):
