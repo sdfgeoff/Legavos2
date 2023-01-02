@@ -2,7 +2,7 @@ use rand::thread_rng;
 use rand_distr::{Distribution, Normal};
 use serde::{Deserialize, Serialize};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct Rnn {
     weights: Vec<Vec<f32>>,
     offsets: Vec<f32>,

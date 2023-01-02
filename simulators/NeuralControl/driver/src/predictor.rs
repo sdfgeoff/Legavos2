@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 
 use super::probability::{gaussian_approximations_from_array, ProbabilityDistributionFunction};
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Predictor {
     pub brain: Rnn,
     pub gaussion_approximations: usize,
@@ -25,7 +25,7 @@ impl Predictor {
         predicted_state
     }
 
-    fn calculate_loss(
+    pub fn calculate_loss(
         &mut self,
         prev_state: &[f32],
         prev_actions: &[f32],
@@ -40,8 +40,10 @@ impl Predictor {
             gaussian_approximations_from_array(predicted_state, self.gaussion_approximations);
         assert_eq!(prediction_distribution.len(), resulting_state.len());
 
-        // calculate normality
+        // calculate normality. Numbers close to zero indicate that this is more normalized
         let normality_score: f32 = prediction_distribution.iter().map(|distribution| distribution.how_normalized() ).sum();
+
+        println!("normality: {:?}", normality_score);
 
         // Normalize prediction distributions
         for distribution in prediction_distribution.iter_mut() {
@@ -49,11 +51,17 @@ impl Predictor {
         }
 
         let accuracy_score: f32 = prediction_distribution.iter().zip(resulting_state.iter()).map(
-            |(predicted_state_probability_function, actual_state_item)|
-            predicted_state_probability_function.how_likely(*actual_state_item)
+            |(predicted_state_probability_function, actual_state_item)| {
+                // Ranges between 0 and (theoretically) 1
+                // where zero is impossible and 1 is guaranteed
+                let how_likely = predicted_state_probability_function.how_likely(*actual_state_item);
+
+                // Now it ranges between 0 when the guess was perfect and 1 when it wasn't.
+                1.0 - how_likely
+            }
         ).sum();
         
 
-        return normality_score + accuracy_score
+        return normality_score * 0.01 + accuracy_score
     }
 }

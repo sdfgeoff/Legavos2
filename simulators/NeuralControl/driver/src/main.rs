@@ -62,12 +62,14 @@ impl Main {
                 let previous_action_vec = mem::replace(&mut self.action_vec, new_action_vec);
                 let previous_state_vec = mem::replace(&mut self.state_vec, new_state_vec.clone());
 
-                self.memory.push(memory::MemoryItem {
-                    prev_state: previous_state_vec,
-                    prev_actions: previous_action_vec,
-                    new_state: new_state_vec,
-                });
-                println!("Memory Size: {}", self.memory.len());
+                if previous_state_vec.len() > 0 {
+                    self.memory.push(memory::MemoryItem {
+                        prev_state: previous_state_vec,
+                        prev_actions: previous_action_vec,
+                        new_state: new_state_vec,
+                    });
+                    println!("Memory Size: {}", self.memory.len());
+                }
                 Ok(())
             }
 
@@ -90,6 +92,20 @@ fn main() -> std::io::Result<()> {
     let mut m = Main::new(hostname)?;
 
     loop {
-        m.iterate()?
+        m.iterate()?;
+
+        let mem = &m.memory;
+        let mut brain = m.brain.predictor.clone();
+        todo!("How to 'reset' the prediction network so it gives consistent scoring? Set it's state to zeros? I guess so")
+
+        let predictor_performance: f32 = mem.iter().map(|memory_item|
+            brain.calculate_loss(
+                &memory_item.prev_state,
+                &memory_item.prev_actions,
+                &memory_item.new_state,
+            )
+        ).sum();
+
+        println!("predictor_performance: {:?}", m.state_vec);
     }
 }

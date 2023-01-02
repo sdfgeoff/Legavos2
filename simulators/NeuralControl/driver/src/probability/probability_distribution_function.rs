@@ -19,15 +19,16 @@ impl ProbabilityDistributionFunction {
         // zero is prefectly normalized and any positive number is the deviation
         // from that.
         let sum_max: f32 = self.curves.iter().map(|x| x.max.abs()).sum();
-        (sum_max - 1.0)
+        sum_max - 1.0
     }
 
     pub fn normalize(&mut self) {
         // Ensures the distribution function sums to 1.
         let sum_max: f32 = self.curves.iter().map(|x| x.max.abs()).sum();
-
-        for curve in self.curves.iter_mut() {
-            curve.max = curve.max.abs() / sum_max;
+        if sum_max != 0.0 {
+            for curve in self.curves.iter_mut() {
+                curve.max = curve.max.abs() / sum_max;
+            }
         }
     }
 }
